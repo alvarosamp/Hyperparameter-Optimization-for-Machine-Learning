@@ -1,0 +1,43 @@
+# Bayesian Optimization
+
+Bayesian Optimization is a powerful strategy for optimizing hyperparameters in machine learning models. It is particularly useful when the evaluation of the objective function is expensive, such as in the case of training complex models.
+
+## Key Concepts
+
+- **Surrogate Model**: Bayesian Optimization uses a surrogate model, typically a Gaussian Process, to approximate the objective function.
+- **Acquisition Function**: This function determines the next point to evaluate by balancing exploration and exploitation.
+- **Exploration vs. Exploitation**: Exploration involves searching new areas of the parameter space, while exploitation focuses on areas known to yield good results.
+
+## Steps in Bayesian Optimization
+
+1. **Initialization**: Start with a set of initial points and evaluate the objective function.
+2. **Surrogate Model Fitting**: Fit a surrogate model to the known data points.
+3. **Acquisition Function Optimization**: Use the acquisition function to select the next point to evaluate.
+4. **Evaluation**: Evaluate the objective function at the selected point.
+5. **Update**: Update the surrogate model with the new data point.
+6. **Iteration**: Repeat steps 3-5 until convergence or a stopping criterion is met.
+
+## Advantages
+
+- Efficient for expensive evaluations.
+- Can handle noisy objective functions.
+- Provides a probabilistic model of the objective function.
+
+## Applications
+
+- Hyperparameter tuning in machine learning.
+- Optimization in engineering design.
+- Experimental design in scientific research.
+
+## Libraries
+
+Several libraries are available for Bayesian Optimization in Python, including:
+
+- `scikit-optimize`
+- `GPyOpt`
+- `Spearmint`
+- `Hyperopt`
+
+## Example
+
+Here is a simple example using `scikit-optimize`:
