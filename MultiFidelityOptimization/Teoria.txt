@@ -1,0 +1,29 @@
+# Otimização Multi-Fidelidade
+
+A otimização multi-fidelidade é uma abordagem avançada utilizada em aprendizado de máquina e otimização de hiperparâmetros. Esta técnica combina informações de diferentes níveis de fidelidade (ou precisão) para melhorar a eficiência e a eficácia do processo de otimização.
+
+## O que é Fidelidade?
+
+Fidelidade refere-se ao nível de precisão ou detalhe de um modelo ou simulação. Modelos de alta fidelidade são mais precisos, mas também mais caros em termos de tempo e recursos computacionais. Modelos de baixa fidelidade são menos precisos, mas mais baratos e rápidos de executar.
+
+## Por que usar Otimização Multi-Fidelidade?
+
+A principal vantagem da otimização multi-fidelidade é a capacidade de equilibrar o custo computacional e a precisão. Ao combinar informações de modelos de diferentes fidelidades, é possível obter resultados precisos sem a necessidade de executar constantemente modelos de alta fidelidade, que são mais caros.
+
+## Como Funciona?
+
+1. **Modelos de Baixa Fidelidade**: Começa-se com modelos de baixa fidelidade para explorar rapidamente o espaço de busca.
+2. **Modelos de Alta Fidelidade**: Utiliza-se modelos de alta fidelidade para refinar as áreas promissoras identificadas pelos modelos de baixa fidelidade.
+3. **Combinação de Informações**: As informações de ambos os modelos são combinadas para guiar o processo de otimização de forma eficiente.
+
+## Aplicações
+
+A otimização multi-fidelidade é amplamente utilizada em várias áreas, incluindo:
+
+- **Otimização de Hiperparâmetros**: Para encontrar os melhores hiperparâmetros de modelos de aprendizado de máquina.
+- **Engenharia**: Para otimizar projetos complexos onde simulações de alta fidelidade são muito caras.
+- **Ciências Computacionais**: Para resolver problemas complexos que envolvem simulações em diferentes níveis de detalhe.
+
+## Conclusão
+
+A otimização multi-fidelidade é uma técnica poderosa que permite uma exploração eficiente do espaço de busca, combinando a rapidez dos modelos de baixa fidelidade com a precisão dos modelos de alta fidelidade. Esta abordagem é essencial para resolver problemas complexos de forma eficiente e eficaz.

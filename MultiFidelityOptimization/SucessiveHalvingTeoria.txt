@@ -1,0 +1,29 @@
+# Sucessive Halving
+
+Sucessive Halving é uma técnica de otimização de hiperparâmetros que visa encontrar os melhores hiperparâmetros de um modelo de machine learning de forma eficiente. A ideia principal é treinar vários modelos com diferentes configurações de hiperparâmetros e, em cada etapa, eliminar os modelos com pior desempenho, concentrando os recursos computacionais nos modelos mais promissores.
+
+## Passos do Sucessive Halving
+
+1. **Inicialização**: Defina o número total de configurações de hiperparâmetros a serem testadas (n) e o número de iterações (r).
+
+2. **Treinamento Inicial**: Treine todos os modelos com diferentes configurações de hiperparâmetros por um número pequeno de iterações ou com uma fração pequena dos dados.
+
+3. **Avaliação**: Avalie o desempenho de cada modelo.
+
+4. **Seleção**: Selecione os melhores modelos com base no desempenho e descarte os piores. Normalmente, a metade dos modelos é descartada.
+
+5. **Repetição**: Repita os passos de treinamento, avaliação e seleção até que reste apenas um modelo ou até que o número máximo de iterações seja alcançado.
+
+## Vantagens
+
+- **Eficiência Computacional**: Ao eliminar os modelos de pior desempenho em cada etapa, o Sucessive Halving reduz significativamente o tempo e os recursos necessários para encontrar os melhores hiperparâmetros.
+- **Escalabilidade**: Pode ser facilmente escalado para grandes conjuntos de dados e modelos complexos.
+
+## Desvantagens
+
+- **Dependência de Recursos**: Requer uma quantidade inicial significativa de recursos para treinar todos os modelos na primeira etapa.
+- **Possível Perda de Bons Modelos**: Alguns modelos promissores podem ser descartados nas primeiras etapas devido ao desempenho inicial ruim.
+
+## Exemplo de Implementação
+
+Aqui está um exemplo simplificado de como o Sucessive Halving pode ser implementado em Python:
